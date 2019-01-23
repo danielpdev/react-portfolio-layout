@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const About = props => {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
       <main id="about">
         <h1 className="lg-heading">
           About <span className="text-secondary">Me</span>
@@ -55,7 +59,6 @@ const About = props => {
           </div>
         </div>
       </main>
-      <footer id="main-footer">Copyright &copy; 2019</footer>
     </React.Fragment>
   );
 };
